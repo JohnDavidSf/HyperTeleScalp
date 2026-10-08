@@ -1,13 +1,14 @@
 # HyperTeleScalp current state
 
-Updated 2026-10-07 (America/Montreal). **LIVE TRADING: DISABLED.** Phase 0 only;
+Updated 2026-10-07 (America/Montreal). **LIVE TRADING: DISABLED.** Phase 0 complete;
 Phase 1 is not approved. Repository is private, at `/opt/homelab/hypertele-scalp/`
 with directory `775 server:server`. Branch: `codex/bootstrap`.
 
-Implementation revision: pending bootstrap commit; initial upstream main was
-`952424494139034e4b4f55a88f5dc861d0a1995f`. Current revision is available with
-`git rev-parse HEAD`; this record will identify the verified implementation
-commit before handoff. No direct main changes or force pushes.
+Verified implementation commit: `cccff725a5c427e1febb91db6516ec9216243394`, pushed
+to `origin/codex/bootstrap`. Initial upstream main remains
+`952424494139034e4b4f55a88f5dc861d0a1995f`. A subsequent state-only handoff commit
+records this immutable implementation reference; use `git rev-parse HEAD` for
+the latest handoff revision. No direct main changes or force pushes.
 
 ## Goal and architecture
 
