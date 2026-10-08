@@ -1,0 +1,37 @@
+# DOCUMENTATION ONLY. Do not install during bootstrap.
+# User, binary, state directory, credentials and daemon command DO NOT exist yet.
+# Every hardening directive requires future validation with actual runtime needs.
+[Unit]
+Description=HyperTeleScalp future signal execution daemon
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=hypertele
+Group=hypertele
+WorkingDirectory=/opt/homelab/hypertele-scalp
+ExecStart=/opt/homelab/hypertele-scalp/bin/hypertele-scalp daemon --config /opt/homelab/hypertele-scalp/config/config.toml
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+PrivateDevices=true
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+# StateDirectory=hypertele-scalp
+# LoadCredential=...   # dedicated session/API wallet; never inline secrets
+# LimitMEMLOCK=...     # only after measured need and hardening validation
+
+[Install]
+WantedBy=multi-user.target

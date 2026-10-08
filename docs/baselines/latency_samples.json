@@ -1,0 +1,13 @@
+{
+  "metric": "synthetic_parse_plus_simulation_risk_ns",
+  "samples": 20000,
+  "warmup": 2000,
+  "p50": 407,
+  "p90": 500,
+  "p95": 555,
+  "p99": 604,
+  "p999": 768,
+  "max": 15375,
+  "profile": "release bench",
+  "source": "captured stdout of cargo bench --locked --bench latency_samples; initial bootstrap working tree"
+}

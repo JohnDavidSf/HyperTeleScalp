@@ -1,0 +1,26 @@
+# OFFLINE ONLY. Numeric limits below are synthetic engineering examples,
+# not approved live-trading settings. Empty allowlist and zero budgets fail closed.
+schema_version = 1
+trading_enabled = false
+backend = "dry_run" # only dry_run and replay exist
+execution_queue_capacity = 64
+dedupe_capacity = 4096
+telemetry_capacity = 1024
+
+[telegram]
+channel_ids = [] # exactly two distinct IDs will be required for future ingestion
+
+[risk]
+symbol_allowlist = []
+max_signal_age_ms = 3000
+max_market_age_ms = 250
+max_queue_age_ms = 50
+max_spread_bps = 20
+max_slippage_bps = 10
+max_notional = "0"
+max_loss = "0"
+
+[strategy]
+# Intentionally unset: margin_mode = "cross" or "isolated", leverage = integer.
+# Optional offline experiments: tp_alpha and stop_beta as decimal strings in (0, 1].
+# No approved live leverage, margin, TP, SL, or position sizing policy exists.

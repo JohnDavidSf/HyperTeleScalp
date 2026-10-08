@@ -1,0 +1,16 @@
+/target/
+/.env
+/.env.*
+!/.env.example
+/data/
+/corpus/
+/config/config.toml
+*.session
+*.session-*
+*.sqlite*
+*.db
+*.pem
+*.key
+*.p12
+*.log
+/artifacts/

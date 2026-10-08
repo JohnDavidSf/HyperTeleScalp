@@ -1,0 +1,26 @@
+{
+  "fsync_ns": {
+    "count": 200,
+    "p50": 2956278,
+    "p90": 3394334,
+    "p95": 4301301,
+    "p99": 6177620,
+    "p999": 6344714,
+    "max": 6344714,
+    "mean": 2924881.165,
+    "stddev": 758068.8680194417
+  },
+  "fdatasync_ns": {
+    "count": 200,
+    "p50": 2884924,
+    "p90": 3685952,
+    "p95": 4261574,
+    "p99": 5994089,
+    "p999": 6571586,
+    "max": 6571586,
+    "mean": 2694441.095,
+    "stddev": 953996.0237396412
+  },
+  "method": "200 samples + 20 warmup for each call; 4096-byte append before timed sync; existing file on project filesystem; does not validate power-loss recovery",
+  "recorded_at_utc": "2026-10-07T23:54:07.337843+00:00"
+}

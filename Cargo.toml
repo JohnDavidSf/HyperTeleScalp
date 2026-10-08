@@ -1,0 +1,33 @@
+[package]
+name = "hypertele-scalp"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+description = "Offline bootstrap for deterministic Telegram signal execution on Hyperliquid"
+publish = false
+
+[dependencies]
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+toml = "1.1.6"
+thiserror = "2.0.21"
+hdrhistogram = { version = "7.6.0", default-features = false }
+
+[dev-dependencies]
+criterion = { version = "0.8.2", default-features = false, features = ["cargo_bench_support"] }
+proptest = { version = "1.11.0", default-features = false, features = ["std"] }
+
+[[bench]]
+name = "pipeline"
+harness = false
+
+[[bench]]
+name = "latency_samples"
+harness = false
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"

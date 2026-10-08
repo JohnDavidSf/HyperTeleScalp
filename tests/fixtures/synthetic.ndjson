@@ -1,0 +1,3 @@
+{"channel_id":-1001,"message_id":1,"source_timestamp_ms":null,"reference_message_id":null,"text":"BTC to the moon 🚀","caption":null,"media":[],"edited":false,"forwarded":false,"label":"synthetic_ignore"}
+{"channel_id":-1001,"message_id":2,"source_timestamp_ms":null,"reference_message_id":null,"text":"HTS_FIXTURE_V1|BTC|LONG|100|101|110,120|90","caption":null,"media":[],"edited":false,"forwarded":false,"label":"synthetic_signal"}
+{"channel_id":-1002,"message_id":3,"source_timestamp_ms":null,"reference_message_id":null,"text":"HTS_FIXTURE_V1|BTC|LONG|100","caption":null,"media":[],"edited":false,"forwarded":false,"label":"synthetic_incomplete"}

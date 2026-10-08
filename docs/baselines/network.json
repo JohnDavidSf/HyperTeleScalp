@@ -1,0 +1,124 @@
+{
+  "method": "10 independent IPv4 curl HTTPS GET connections; GET /info is intentionally not an API POST",
+  "summaries_ms": {
+    "dns_ms": {
+      "count": 10,
+      "p50": 2.562,
+      "p90": 5.2170000000000005,
+      "p95": 9.56,
+      "p99": 9.56,
+      "p999": 9.56,
+      "max": 9.56,
+      "mean": 3.455,
+      "stddev": 2.437294975992853
+    },
+    "tcp_ms": {
+      "count": 10,
+      "p50": 8.995000000000001,
+      "p90": 9.249,
+      "p95": 9.922,
+      "p99": 9.922,
+      "p999": 9.922,
+      "max": 9.922,
+      "mean": 9.1385,
+      "stddev": 0.30780229043982144
+    },
+    "tls_ms": {
+      "count": 10,
+      "p50": 45.62199999999999,
+      "p90": 66.72500000000001,
+      "p95": 70.1,
+      "p99": 70.1,
+      "p999": 70.1,
+      "max": 70.1,
+      "mean": 47.3508,
+      "stddev": 17.997174182632115
+    },
+    "through_tls_ms": {
+      "count": 10,
+      "p50": 59.16,
+      "p90": 79.668,
+      "p95": 80.262,
+      "p99": 80.262,
+      "p999": 80.262,
+      "max": 80.262,
+      "mean": 59.9443,
+      "stddev": 17.62241399496675
+    }
+  },
+  "samples": [
+    {
+      "dns_ms": 9.56,
+      "tcp_ms": 9.24,
+      "tls_ms": 25.804,
+      "through_tls_ms": 44.604,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 5.2170000000000005,
+      "tcp_ms": 9.249,
+      "tls_ms": 49.958,
+      "through_tls_ms": 64.42399999999999,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 1.535,
+      "tcp_ms": 8.767999999999999,
+      "tls_ms": 28.295,
+      "through_tls_ms": 38.598,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 1.1789999999999998,
+      "tcp_ms": 9.922,
+      "tls_ms": 28.685000000000002,
+      "through_tls_ms": 39.786,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 1.905,
+      "tcp_ms": 8.946,
+      "tls_ms": 26.036000000000005,
+      "through_tls_ms": 36.887,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 1.173,
+      "tcp_ms": 8.988999999999999,
+      "tls_ms": 70.1,
+      "through_tls_ms": 80.262,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 2.846,
+      "tcp_ms": 8.995000000000001,
+      "tls_ms": 66.074,
+      "through_tls_ms": 77.91499999999999,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 2.562,
+      "tcp_ms": 8.852,
+      "tls_ms": 66.72500000000001,
+      "through_tls_ms": 78.139,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 4.268,
+      "tcp_ms": 9.191,
+      "tls_ms": 66.209,
+      "through_tls_ms": 79.668,
+      "http_status": "405"
+    },
+    {
+      "dns_ms": 4.305,
+      "tcp_ms": 9.233,
+      "tls_ms": 45.62199999999999,
+      "through_tls_ms": 59.16,
+      "http_status": "405"
+    }
+  ],
+  "ping_exit": 0,
+  "ping": "PING api.hyperliquid.xyz (18.245.104.113) 56(84) bytes of data.\n64 bytes from 18.245.104.113: icmp_seq=1 ttl=246 time=9.90 ms\n64 bytes from 18.245.104.113: icmp_seq=2 ttl=246 time=8.96 ms\n64 bytes from 18.245.104.113: icmp_seq=3 ttl=246 time=9.37 ms\n64 bytes from 18.245.104.113: icmp_seq=4 ttl=246 time=9.11 ms\n64 bytes from 18.245.104.113: icmp_seq=5 ttl=246 time=9.03 ms\n64 bytes from 18.245.104.113: icmp_seq=6 ttl=246 time=9.11 ms\n64 bytes from 18.245.104.113: icmp_seq=7 ttl=246 time=9.09 ms\n64 bytes from 18.245.104.113: icmp_seq=8 ttl=246 time=9.10 ms\n64 bytes from 18.245.104.113: icmp_seq=9 ttl=246 time=8.55 ms\n64 bytes from 18.245.104.113: icmp_seq=10 ttl=246 time=9.54 ms\n64 bytes from 18.245.104.113: icmp_seq=11 ttl=246 time=9.04 ms\n64 bytes from 18.245.104.113: icmp_seq=12 ttl=246 time=9.02 ms\n64 bytes from 18.245.104.113: icmp_seq=13 ttl=246 time=8.59 ms\n64 bytes from 18.245.104.113: icmp_seq=14 ttl=246 time=9.53 ms\n64 bytes from 18.245.104.113: icmp_seq=15 ttl=246 time=8.68 ms\n64 bytes from 18.245.104.113: icmp_seq=16 ttl=246 time=8.72 ms\n64 bytes from 18.245.104.113: icmp_seq=17 ttl=246 time=9.09 ms\n64 bytes from 18.245.104.113: icmp_seq=18 ttl=246 time=9.55 ms\n64 bytes from 18.245.104.113: icmp_seq=19 ttl=246 time=9.07 ms\n64 bytes from 18.245.104.113: icmp_seq=20 ttl=246 time=9.05 ms\n\n--- api.hyperliquid.xyz ping statistics ---\n20 packets transmitted, 20 received, 0% packet loss, time 3812ms\nrtt min/avg/max/mdev = 8.547/9.104/9.898/0.333 ms\n",
+  "recorded_at_utc": "2026-10-07T23:54:05.931215+00:00"
+}
